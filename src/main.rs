@@ -4,12 +4,12 @@ use reqwest::StatusCode;
 use serde::Deserialize;
 use serde_json::Value;
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize)]
 struct Payload {
     payload: Listens,
 }
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize)]
 struct Listens {
     listens: Vec<Value>,
 }
